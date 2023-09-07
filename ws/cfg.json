@@ -1,0 +1,120 @@
+{"prods": [
+        {
+            "itemImg": "https://cdn.jsdelivr.net/gh/ColaCaprichosa/FPWLR/rust.png",
+            "itemImgSmall": false,
+            "id": "rust",
+            "name": "RUST SCRIPT",
+            "preview_imgs": [
+                "img/rust_0.png",
+                "img/rust_1.png",
+                "img/rust_2.png"
+            ],
+            "previewVideo": false,
+            "bgImg": "img/bg-rust.jpg",
+            "colour": "#ff0101",
+            "gradient": "60, rgb(18 18 18/ 85%)",
+            "secNStaff": "<p>&#9679; EasyAntiCheat undetected</p>\n                    <p>&#9679; Arkan undetected</p>\n                    <p>&#9679; NoRecoil undetected</p>\n                    <p>&#9679; Unique build per customer</p>\n                    <p>&#9679; Active & helpful staff</p>\n                    <p>&#9679; +3 years undetected</p>",
+            "features": "<p>&#9679; Customizable smooth</p>\n                    <p>&#9679; Customizable overlay</p>\n                    <p>&#9679; Customizable crosshair</p>\n                    <p>&#9679; All attachments supported</p>\n                    <p>&#9679; Low CPU Usage (0% - 3%)</p>\n                    <p>&#9679; OBS-Proof / Screenshot proof</p>\n                    <p>&#9679; Fullscreen overlay support & more</p>",
+            "subsType": {
+                "defVal": 2,
+                "days": [
+                    "2 days",
+                    "1 week",
+                    "1 month",
+                    "3 months"
+                ],
+                "prices": [
+                    "1 usd",
+                    "3 usd",
+                    "9 usd",
+                    "19.99 usd"
+                ],
+                "shop_codes": [
+                    "1231321",
+                    "xdxdxd",
+                    "SADADA",
+                    "douuu"
+                ]
+            }
+        },
+        {
+            "hidden": true,
+            "itemImg": "https://cdn.jsdelivr.net/gh/ColaCaprichosa/FPWLR/cs.png",
+            "id": "csgo",
+            "name": "CSGO EXTERNAL",
+            "preview_imgs": [
+                "L4tn8Hx4L0I",
+                "img/csgo_1.png",
+                "img/csgo_2.png",
+                "img/csgo_3.png"
+            ],
+            "previewVideo": true,
+            "bgImg": "img/bg-csgo.jpg",
+            "colour": "#f7c95e",
+            "gradient": "60, rgb(18 18 18/ 85%)",
+            "secNStaff": "<p>&#9679; VAC3 undetected</p>\n                    <p>&#9679; SMAC undetected</p>\n                    <p>&#9679; Kernel security</p>\n                    <p>&#9679; Active & helpful staff</p>\n                    <p>&#9679; Unique build per customer</p>\n                    <p>&#9679; Does not affect trust factor</p>",
+            "features": "<p>&#9679; Customizable aimbot</p>\n                    <p>&#9679; Customizable triggerbot</p>\n                    <p>&#9679; Customizable visuals</p>\n                    <p>&#9679; Glow Visuals</p>\n                    <p>&#9679; Low CPU Usage (0% - 3%)</p>\n                    <p>&#9679; OBS-Proof / Screenshot proof</p>\n                    <p>&#9679; Fullscreen overlay support & more</p>",
+            "subsType": {
+                "defVal": 2,
+                "days": [
+                    "3 day",
+                    "5 week",
+                    "1 month",
+                    "3 months"
+                ],
+                "prices": [
+                    "61 usd",
+                    "52 usd",
+                    "1 usd",
+                    "3 usd"
+                ],
+                "shop_codes": [
+                    "1231321",
+                    "xdxdxd",
+                    "SADADA",
+                    "douuu"
+                ]
+            }
+        },
+        {
+            "hidden": true,
+            "itemImg": "https://cdn.jsdelivr.net/gh/ColaCaprichosa/FPWLR/valo.png",
+            "id": "valo",
+            "name": "valo",
+            "hasPreview": true,
+            "preview_imgs": [
+                "L4tn8Hx4L0I",
+                "img/csgo_1.png",
+                "img/csgo_2.png",
+                "img/csgo_3.png"
+            ],
+            "previewVideo": true,
+            "bgImg": "img/bg-csgo.jpg",
+            "colour": "#fc0356",
+            "gradient": "20, #fc035690",
+            "secNStaff": "<p>&#9679; VAC3 undetected</p>\n                    <p>&#9679; SMAC undetected</p>\n                    <p>&#9679; Kernel security</p>\n                    <p>&#9679; Active & helpful staff</p>\n                    <p>&#9679; Unique build per customer</p>\n                    <p>&#9679; Does not affect trust factor</p>",
+            "features": "<p>&#9679; Customizable aimbot</p>\n                    <p>&#9679; Customizable triggerbot</p>\n                    <p>&#9679; Customizable visuals</p>\n                    <p>&#9679; Glow Visuals</p>\n                    <p>&#9679; Low CPU Usage (0% - 3%)</p>\n                    <p>&#9679; OBS-Proof / Screenshot proof</p>\n                    <p>&#9679; Fullscreen overlay support & more</p>",
+            "subsType": {
+                "defVal": 2,
+                "days": [
+                    "3 day",
+                    "5 week",
+                    "1 month",
+                    "3 months"
+                ],
+                "prices": [
+                    "61 usd",
+                    "52 usd",
+                    "1 usd",
+                    "3 usd"
+                ],
+                "shop_codes": [
+                    "1231321",
+                    "xdxdxd",
+                    "SADADA",
+                    "douuu"
+                ]
+            }
+        }
+    ]
+}
