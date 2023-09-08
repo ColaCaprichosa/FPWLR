@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: Roboto;
   src: url(/static/css/fonts/Roboto-Regular.ttf) format('truetype')
@@ -116,7 +123,8 @@ img {
   background: rgba(0, 0, 0, 0.938);
   position: fixed;
   width: 100vw;
-  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .77);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .77);
+          box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .77);
   z-index: 999
 }
 
@@ -126,10 +134,14 @@ img {
 
 #header .container {
   position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   color: #fff;
-  align-items: center
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center
 }
 
 #header .container h1 {
@@ -141,6 +153,8 @@ img {
 }
 
 #logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   z-index: 99;
 }
@@ -152,9 +166,15 @@ img {
 nav#menu>ul>li {
   float: left;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   text-transform: uppercase;
   margin-right: 5px;
@@ -230,7 +250,8 @@ nav#menu>ul>li.external {
   top: 100%;
   left: 0;
   z-index: 99;
-  box-shadow: #ccc;
+  -webkit-box-shadow: #ccc;
+          box-shadow: #ccc;
 }
 
 .sf-menu li:hover>ul {
@@ -365,6 +386,8 @@ section strong {
   background-size: cover;
   position: relative;
   background: #080808;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(.1em, rgba(55, 55, 55, .1)), color-stop(.1em, transparent)), -webkit-gradient(linear, left top, right top, color-stop(.1em, rgba(55, 55, 55, .1)), color-stop(.1em, transparent));
+  background-image: -o-linear-gradient(rgba(55, 55, 55, .1) .1em, transparent .1em), -o-linear-gradient(left, rgba(55, 55, 55, .1) .1em, transparent .1em);
   background-image: linear-gradient(rgba(55, 55, 55, .1) .1em, transparent .1em), linear-gradient(90deg, rgba(55, 55, 55, .1) .1em, transparent .1em);
   background-size: 1em 1em;
   max-height: auto
@@ -376,7 +399,9 @@ section strong {
   margin: auto;
   position: relative;
   top: 50%;
-  transform: translateY(-50%)
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%)
 }
 
 #landing .content .logo {
@@ -470,14 +495,17 @@ section strong {
   padding: 15px;
   border-radius: 60px;
   background: #fff;
-  box-shadow: 0 0 30px 0 rgba(119, 3, 252, .2);
+  -webkit-box-shadow: 0 0 30px 0 rgba(119, 3, 252, .2);
+          box-shadow: 0 0 30px 0 rgba(119, 3, 252, .2);
   margin: auto
 }
 
 .features .feature-list .feature .grid-header-image img {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   max-height: 100%
 }
 
@@ -501,6 +529,8 @@ section strong {
 }
 
 .games-csgo {
+  -webkit-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
 }
 
@@ -593,6 +623,8 @@ section strong {
   margin: 100px auto 60px auto;
   padding: 15px;
   border-radius: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 13, 21, .123)), color-stop(rgba(13, 13, 21, .753)), to(rgba(13, 13, 21, .171)));
+  background: -o-linear-gradient(top, rgba(13, 13, 21, .123), rgba(13, 13, 21, .753), rgba(13, 13, 21, .171));
   background: linear-gradient(180deg, rgba(13, 13, 21, .123), rgba(13, 13, 21, .753), rgba(13, 13, 21, .171))
 }
 
@@ -601,13 +633,15 @@ section strong {
 }
 
 #games img {
-  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   display: block;
   margin: auto
 }
 
 #games .item {
-  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   max-width: 340px;
   margin: auto;
   padding: 10px;
@@ -640,13 +674,20 @@ section strong {
 }
 
 .btn-full {
-  box-shadow: 0 0 30px 0 rgb(255 255 255 / 42%);
+  -webkit-box-shadow: 0 0 30px 0 rgb(255 255 255 / 42%);
+          box-shadow: 0 0 30px 0 rgb(255 255 255 / 42%);
   background-color: #12171d;
   border-radius: 10px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
   height: 30px;
   font-size: 18px;
@@ -654,7 +695,8 @@ section strong {
 }
 
 .btn-full:hover {
-  box-shadow: 0 0 30px 0 rgba(255, 255, 255, .795);
+  -webkit-box-shadow: 0 0 30px 0 rgba(255, 255, 255, .795);
+          box-shadow: 0 0 30px 0 rgba(255, 255, 255, .795);
   background-color: #171f29;
 }
 
@@ -680,7 +722,8 @@ section strong {
   background: #2a2a2a;
   background-color: #2a2a2a;
   padding: 80px 0 200px 0;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .25)
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .25);
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, .25)
 }
 
 #footer .container {
@@ -735,7 +778,8 @@ section strong {
 .main_view img {
   width: 100%;
   height: 100%;
-  object-fit: scale-down
+  -o-object-fit: scale-down;
+     object-fit: scale-down
 }
 
 #loading-overlay {
@@ -746,9 +790,15 @@ section strong {
   height: 100%;
   background: #131313;
   z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center
 }
 
 .loading-spinner {
@@ -757,7 +807,22 @@ section strong {
   border-radius: 50%;
   border: 5px solid #ccc;
   border-top-color: #444;
-  animation: spin 1s linear infinite;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
 }
 
 @keyframes blink {
@@ -774,13 +839,27 @@ section strong {
   }
 }
 
-@keyframes spin {
+@-webkit-keyframes spin {
   0% {
-    transform: rotate(0)
+    -webkit-transform: rotate(0);
+            transform: rotate(0)
   }
 
   100% {
-    transform: rotate(360deg)
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg)
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0)
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg)
   }
 }
 
@@ -794,7 +873,8 @@ section strong {
   position: absolute;
   top: 2px;
   height: 0;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none
 }
 
@@ -904,7 +984,8 @@ section strong {
   position: absolute;
   top: 2px;
   height: 0;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
   background: 0 0
 }
@@ -916,7 +997,8 @@ section strong {
   border: 4px solid #54b7e2;
   background-color: #54b7e2;
   border-radius: 24px;
-  box-shadow: 0 -5px 5px rgba(0, 140, 255, .445);
+  -webkit-box-shadow: 0 -5px 5px rgba(0, 140, 255, .445);
+          box-shadow: 0 -5px 5px rgba(0, 140, 255, .445);
   margin-top: 5px
 }
 
@@ -933,6 +1015,8 @@ section strong {
 
 .preview-container img {
   max-width: 25%;
+  -webkit-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out
 }
 
@@ -942,47 +1026,76 @@ section strong {
 }
 
 .preview-container button {
-  transition: transform .1s ease-in-out
+  -webkit-transition: -webkit-transform .1s ease-in-out;
+  transition: -webkit-transform .1s ease-in-out;
+  -o-transition: transform .1s ease-in-out;
+  transition: transform .1s ease-in-out;
+  transition: transform .1s ease-in-out, -webkit-transform .1s ease-in-out
 }
 
 .preview-container button:hover {
-  transform: scale(0.95)
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95)
 }
 
 .preview-container img:hover {
-  transform: scale(1.10)
+  -webkit-transform: scale(1.10);
+      -ms-transform: scale(1.10);
+          transform: scale(1.10)
 }
 
 .preview-container button.hidden {
-  transform: scale(0)
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0)
 }
 
 .preview-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   display: flex;
-  justify-content: center
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center
 }
 
 .preview-container iframe,
 .preview-container img {
-  flex: 1
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1
 }
 
 .preview-container .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center
 }
 
 .preview-container .prev-btn {
-  order: -1
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1
 }
 
 @media screen and (max-width:1024px) {
 
   .preview-container img {
     max-width: 60%;
+    -webkit-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out
   }
   
@@ -1082,7 +1195,9 @@ section strong {
   }
 
   .preview-container {
-    transform: scale(1.25) translateY(+10%);
+    -webkit-transform: scale(1.25) translateY(+10%);
+        -ms-transform: scale(1.25) translateY(+10%);
+            transform: scale(1.25) translateY(+10%);
   }
 
   nav#menu>ul>li {
@@ -1096,32 +1211,48 @@ section strong {
 }
 
 .options-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card {
   width: 300px;
   height: 250px;
   background-color: #fff;
-  box-shadow: 7px 7px 7px 1px rgb(0 0 0 / 20%);
+  -webkit-box-shadow: 7px 7px 7px 1px rgb(0 0 0 / 20%);
+          box-shadow: 7px 7px 7px 1px rgb(0 0 0 / 20%);
   border-radius: 5px;
   overflow: hidden;
   margin: 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   position: relative;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .card img {
   width: 100%;
   height: 100px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   color: #f5deb300;
 }
 
@@ -1163,8 +1294,11 @@ section strong {
 }
 
 .card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background-color: #e7e7e7;
 }
 
@@ -1174,6 +1308,13 @@ section strong {
   bottom: -10px;
   left: 10px;
   right: 10px;
+  background: -webkit-gradient(linear,
+      left top, left bottom,
+      from(rgba(255, 255, 255, 0)),
+      to(rgba(255, 255, 255, 0.3)));
+  background: -o-linear-gradient(top,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.3));
   background: linear-gradient(to bottom,
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0.3));
