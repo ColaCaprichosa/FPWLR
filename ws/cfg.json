@@ -1,22 +1,24 @@
-{"prods": [
+{
+    "prods": [
         {
             "itemImg": "https://cdn.jsdelivr.net/gh/ColaCaprichosa/FPWLR/rust.png",
             "itemImgSmall": false,
             "id": "rust",
             "name": "RUST SCRIPT",
+            "hasPreview": false,
             "preview_imgs": [
                 "img/rust_0.png",
                 "img/rust_1.png",
                 "img/rust_2.png"
             ],
             "previewVideo": false,
-            "bgImg": "img/bg-rust.jpg",
+            "bgImg": "https://cdn.jsdelivr.net/gh/ColaCaprichosa/FPWLR/ws/img/bg-rust.jpg",
             "colour": "#ff0101",
             "gradient": "60, rgb(18 18 18/ 85%)",
             "secNStaff": "<p>&#9679; EasyAntiCheat undetected</p>\n                    <p>&#9679; Arkan undetected</p>\n                    <p>&#9679; NoRecoil undetected</p>\n                    <p>&#9679; Unique build per customer</p>\n                    <p>&#9679; Active & helpful staff</p>\n                    <p>&#9679; +3 years undetected</p>",
             "features": "<p>&#9679; Customizable smooth</p>\n                    <p>&#9679; Customizable overlay</p>\n                    <p>&#9679; Customizable crosshair</p>\n                    <p>&#9679; All attachments supported</p>\n                    <p>&#9679; Low CPU Usage (0% - 3%)</p>\n                    <p>&#9679; OBS-Proof / Screenshot proof</p>\n                    <p>&#9679; Fullscreen overlay support & more</p>",
             "subsType": {
-                "defVal": 2,
+                "defVal": 3,
                 "days": [
                     "2 days",
                     "1 week",
@@ -24,16 +26,16 @@
                     "3 months"
                 ],
                 "prices": [
-                    "1 usd",
-                    "3 usd",
-                    "9 usd",
-                    "19.99 usd"
+                    " $1.99 USD",
+                    " $3.99 USD",
+                    " $9.99 USD",
+                    " $19.99 USD"
                 ],
                 "shop_codes": [
-                    "1231321",
-                    "xdxdxd",
-                    "SADADA",
-                    "douuu"
+                    "rust-script-2-days",
+                    "rust-script-1-week",
+                    "rust-script-1-month",
+                    "rust-script-3-months"
                 ]
             }
         },
