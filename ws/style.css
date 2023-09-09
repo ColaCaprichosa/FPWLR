@@ -1346,21 +1346,33 @@ body::-webkit-scrollbar-thumb {
   color: white;
 }
 
-input[type="text"],
-input[type="password"],
-textarea {
+input[type="text"] {
   color: rgb(226, 226, 226);
   background-color: rgb(25, 25, 25);
   border-radius: 5px;
 }
 
-input[type="password"],
-[type="text"]:valid {
+input[type="password"] {
+  color: rgb(226, 226, 226);
+  background-color: rgb(25, 25, 25);
+  border-radius: 5px;
+}
+
+input[type="password"]:valid {
   border: 2px solid rgba(190, 255, 11, 0.205);
 }
 
-input[type="password"],
-[type="text"]:invalid {
+input[type="text"]:valid {
+  border: 2px solid rgba(190, 255, 11, 0.205);
+}
+
+input[type="password"]:invalid {
+  border: 2px solid rgba(255, 0, 0, 0.205);
+  -webkit-animation: invalid 0.3s 2;
+  animation: invalid 0.3s 2;
+}
+
+input[type="text"]:invalid {
   border: 2px solid rgba(255, 0, 0, 0.205);
   -webkit-animation: invalid 0.3s 2;
   animation: invalid 0.3s 2;
