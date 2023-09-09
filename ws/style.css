@@ -1309,7 +1309,7 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
 
-dialog {
+.dialog {
   z-index: 992;
   background-color: rgb(18 18 20);
   border-style: solid;
@@ -1319,57 +1319,78 @@ dialog {
   color: white;
 }
 
-dialog::-webkit-backdrop {
+.dialog:after
+{
+  width: 100%;
+  height: 100%;
+  filter: blur(3px);
+}
+
+.dialog::-webkit-backdrop {
   background-color: rgb(26 34 43 / 42%);
 }
 
-dialog::backdrop {
+.dialog::backdrop {
   background-color: rgb(26 34 43 / 42%);
 }
 
-dialog p {
+.dialog p {
   color: white;
 }
 
-dialog span {
+.dialog span {
   color: white;
 }
 
-dialog label {
+.dialog label {
   color: white;
+}
+
+input[type="text"],input[type="password"],
+textarea {
+  color: rgb(226, 226, 226);
+  background-color: rgb(25, 25, 25);
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+input:valid {
+  border: 2px solid rgba(190, 255, 11, 0.205);
 }
 
 input:invalid {
-  border: 2px solid red;
+  border: 2px solid rgba(255, 0, 0, 0.205);
   -webkit-animation: invalid 0.3s 2;
-          animation: invalid 0.3s 2;
+  animation: invalid 0.3s 2;
 }
 
 @-webkit-keyframes invalid {
   25% {
-    translate: 6px 0;
+    translate: 3px 0;
   }
 
   50% {
-    translate: -6px 0;
+    translate: -3px 0;
   }
 
   75% {
-    translate: 6px 0;
+    translate: 3px 0;
   }
 }
 
 @keyframes invalid {
   25% {
-    translate: 6px 0;
+    translate: 3px 0;
   }
 
   50% {
-    translate: -6px 0;
+    translate: -3px 0;
   }
 
   75% {
-    translate: 6px 0;
+    translate: 3px 0;
   }
 }
 
