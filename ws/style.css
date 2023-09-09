@@ -891,21 +891,21 @@ section strong {
   width: 100%;
   height: 2px;
   cursor: pointer;
-  background: #b2b2b2
+  background: #b2b2b200
 }
 
 .range input::-moz-range-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
-  background: #b2b2b2
+  background: #b2b2b200
 }
 
 .range input::-ms-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
-  background: #b2b2b2
+  background: #b2b2b200
 }
 
 .range input:focus {
@@ -1319,10 +1319,10 @@ body::-webkit-scrollbar-thumb {
   color: white;
 }
 
-.dialog:after
-{
+.dialog:after {
   width: 100%;
   height: 100%;
+  -webkit-filter: blur(3px);
   filter: blur(3px);
 }
 
@@ -1346,21 +1346,21 @@ body::-webkit-scrollbar-thumb {
   color: white;
 }
 
-input[type="text"],input[type="password"],
+input[type="text"],
+input[type="password"],
 textarea {
   color: rgb(226, 226, 226);
   background-color: rgb(25, 25, 25);
-
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
-input:valid {
+input[type="password"],
+[type="text"]:valid {
   border: 2px solid rgba(190, 255, 11, 0.205);
 }
 
-input:invalid {
+input[type="password"],
+[type="text"]:invalid {
   border: 2px solid rgba(255, 0, 0, 0.205);
   -webkit-animation: invalid 0.3s 2;
   animation: invalid 0.3s 2;
