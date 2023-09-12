@@ -39,31 +39,22 @@ section {
   display: block
 }
 
-body {
-  line-height: 1
-}
-
 ul {
   list-style: none
 }
 
-html {
-  height: 100% !important;
-  min-height: 100% !important;
-  scroll-behavior: smooth;
-}
-
 body {
+  line-height: 1;
   background: #fff;
   font-family: Montserrat, sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
   background-color: #161616;
-  overflow-x: hidden;
   width: 100%;
-  height: 100% !important;
-  min-height: 100% !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 div.clear {
@@ -80,12 +71,14 @@ img {
   max-width: 100%;
   margin: 0 auto;
   padding: 0;
-  overflow-x: hidden
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 #header {
   height: 50px;
-  background: rgba(0, 0, 0, 0.938);
+  background: rgba(0, 0, 0, .938);
   position: fixed;
   width: 100vw;
   -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .77);
@@ -121,7 +114,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 99;
+  z-index: 99
 }
 
 #menu {
@@ -143,7 +136,7 @@ nav#menu>ul>li {
   text-align: center;
   text-transform: uppercase;
   margin-right: 5px;
-  margin-left: 15px;
+  margin-left: 15px
 }
 
 nav#menu>ul>li>a {
@@ -206,7 +199,7 @@ nav#menu>ul>li.external {
 
 .sf-menu {
   height: 45px;
-  padding-top: 4px;
+  padding-top: 4px
 }
 
 .sf-menu ul {
@@ -216,11 +209,11 @@ nav#menu>ul>li.external {
   left: 0;
   z-index: 999;
   -webkit-box-shadow: #ccc;
-  box-shadow: #ccc;
+  box-shadow: #ccc
 }
 
 .sf-menu li:hover>ul {
-  display: block;
+  display: block
 }
 
 .sf-menu ul ul {
@@ -376,13 +369,6 @@ section strong {
   padding: 6px 0
 }
 
-#landing .content .spacer {
-  width: 15%;
-  float: left;
-  display: block;
-  min-height: 1px
-}
-
 #landing .content .text {
   float: none;
   margin: 20px auto;
@@ -413,7 +399,7 @@ section strong {
   padding: 65px 0;
   background-image: -o-radial-gradient(red 12%, transparent 0);
   background-image: radial-gradient(red 12%, transparent 0);
-  background-size: 15px 15px;
+  background-size: 15px 15px
 }
 
 .features * {
@@ -494,9 +480,9 @@ section strong {
 }
 
 .zproducts {
-  -webkit-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+  -webkit-transition: all .7s ease-in-out;
+  -o-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out
 }
 
 .zproducts .container {
@@ -504,7 +490,7 @@ section strong {
   margin: 60px auto auto auto;
   padding: 15px;
   border-radius: 15px;
-  background: rgba(3, 3, 3, 0.700)
+  background: rgba(3, 3, 3, .7)
 }
 
 .zproducts img {
@@ -581,7 +567,7 @@ section strong {
 .btn-full:hover {
   -webkit-box-shadow: 0 0 30px 0 rgba(255, 255, 255, .795);
   box-shadow: 0 0 30px 0 rgba(255, 255, 255, .795);
-  background-color: #171f29;
+  background-color: #171f29
 }
 
 #footer {
@@ -594,8 +580,8 @@ section strong {
 }
 
 #footer .container {
-  overflow: hidden;
-  margin-bottom: 6rem
+  overflow-y: hidden;
+  margin-bottom: 6rem;
 }
 
 #footer h5 {
@@ -621,22 +607,6 @@ section strong {
   color: #fff
 }
 
-
-@media screen and (max-width:460px) {
-  .container {
-    overflow-x: hidden
-  }
-
-  section h1 {
-    font-size: 40px
-  }
-
-  section p {
-    font-size: 20px;
-    line-height: 26px
-  }
-}
-
 .main_view {
   width: 100%;
   height: 25rem
@@ -650,9 +620,6 @@ section strong {
 }
 
 #loading-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: #131313;
@@ -666,16 +633,6 @@ section strong {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center
-}
-
-.loading-spinner {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 5px solid #ccc;
-  border-top-color: #444;
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
 }
 
 @-webkit-keyframes blink {
@@ -822,7 +779,7 @@ section strong {
   position: relative;
   float: left;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   font-size: 14px;
   cursor: pointer
 }
@@ -901,15 +858,15 @@ section strong {
 }
 
 .preview-container button:hover {
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95)
+  -webkit-transform: scale(.95);
+  -ms-transform: scale(.95);
+  transform: scale(.95)
 }
 
 .preview-container img:hover {
-  -webkit-transform: scale(1.10);
-  -ms-transform: scale(1.10);
-  transform: scale(1.10)
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
 }
 
 .preview-container button.hidden {
@@ -957,8 +914,14 @@ section strong {
   order: -1
 }
 
-@media screen and (max-width:1024px) {
+@media (max-width: 768px) {
+  html {
+    width: 100%;
+    overflow-x: clip;
+  }
+}
 
+@media screen and (max-width:1024px) {
   .preview-container img {
     max-width: 60%;
     -webkit-transition: all 1.5s ease-in-out;
@@ -969,50 +932,6 @@ section strong {
   .preview-container iframe {
     max-width: 60%;
     display: none
-  }
-
-  .grid-2,
-  .grid-3,
-  .grid-3-2 {
-    width: 100%;
-    clear: left
-  }
-
-  .grid-4,
-  .grid-5 {
-    width: 50%
-  }
-
-  .grid-6 {
-    width: 33.3333%
-  }
-
-  .grid-8 {
-    width: 25%
-  }
-
-  .grid-2 .grid-content-box,
-  .grid-3 .grid-content-box,
-  .grid-3-2 .grid-content-box {
-    padding: 0
-  }
-
-  .container {
-    width: auto;
-    position: relative;
-    margin: 0 10px
-  }
-
-  .nav-overlay {
-    position: fixed;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .7);
-    display: none;
-    z-index: 998
   }
 
   #footer {
@@ -1027,54 +946,6 @@ section strong {
   #footer h5 {
     padding-bottom: 15px
   }
-
-  #logo span {
-    display: none
-  }
-
-  #landing .content {
-    position: relative;
-  }
-
-  #landing .content .logo {
-    float: none;
-    margin: 40px auto
-  }
-
-  #landing .content .text {
-    float: none;
-    margin: 20px auto;
-    padding: 0
-  }
-
-  .features .feature-list .feature {
-    float: none;
-    margin: auto;
-    padding: 60px 0 0
-  }
-
-  .support-content {
-    background-color: #141414
-  }
-
-  .support-content .container {
-    margin: 0
-  }
-
-  .preview-container {
-    -webkit-transform: scale(1.25) translateY(+10%);
-    -ms-transform: scale(1.25) translateY(+10%);
-    transform: scale(1.25) translateY(+10%);
-  }
-
-  nav#menu>ul>li {
-    margin-right: 5px;
-    margin-left: 15px;
-  }
-
-  nav#menu>ul>li>a {
-    font-size: 16px;
-  }
 }
 
 .options-container {
@@ -1085,7 +956,7 @@ section strong {
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 .card {
@@ -1095,7 +966,7 @@ section strong {
   -webkit-box-shadow: 7px 7px 7px 1px rgb(0 0 0 / 20%);
   box-shadow: 7px 7px 7px 1px rgb(0 0 0 / 20%);
   border-radius: 5px;
-  overflow: hidden;
+  overflow-y: hidden;
   margin: 10px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1110,9 +981,9 @@ section strong {
   text-align: center;
   position: relative;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 
 .card img {
@@ -1120,30 +991,30 @@ section strong {
   height: 100px;
   -o-object-fit: cover;
   object-fit: cover;
-  color: #f5deb300;
+  color: #f5deb300
 }
 
 .card h2 {
-  color: white;
+  color: #fff;
   font-size: 24px;
-  margin-top: 20px;
+  margin-top: 20px
 }
 
 .card p {
-  color: white;
+  color: #fff;
   font-size: 14px;
   text-align: center;
   margin: -15px;
-  overflow: auto;
+  overflow-y: auto;
   width: 100%;
-  height: 95px;
+  height: 95px
 }
 
 .card-link {
   display: block;
   width: 80%;
   padding: 10px;
-  background-color: #222222;
+  background-color: #222;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -1152,21 +1023,21 @@ section strong {
   text-align: center;
   text-decoration: none;
   margin-bottom: 15px;
-  font-weight: bold;
+  font-weight: 700
 }
 
 .card-link:hover {
   background-color: #1d1d1d;
-  color: #fff;
+  color: #fff
 }
 
 .card:hover {
   -webkit-transform: translateY(-2px);
   -ms-transform: translateY(-2px);
   transform: translateY(-2px);
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  background-color: #e7e7e7;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+  background-color: #e7e7e7
 }
 
 .card:after {
@@ -1175,123 +1046,116 @@ section strong {
   bottom: -10px;
   left: 10px;
   right: 10px;
-  background: -o-linear-gradient(top,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.3));
-  background: -webkit-gradient(linear,
-      left top, left bottom,
-      from(rgba(255, 255, 255, 0)),
-      to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(to bottom,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.3));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, .3)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3));
   height: 10px;
-  border-radius: 5px;
+  border-radius: 5px
 }
 
 body::-webkit-scrollbar {
-  width: 0.01em;
-  background-color: transparent;
+  width: .01em;
+  background-color: transparent
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: transparent;
+  background-color: transparent
 }
 
 .dialog {
   z-index: 992;
   background-color: rgb(18 18 20);
   border-style: solid;
-  border: 1px solid rgba(255, 255, 255, 0.171);
-  border-bottom: 2px groove white;
+  border: 1px solid rgba(255, 255, 255, .171);
+  border-bottom: 2px groove #fff;
   border-radius: 5px;
-  color: white;
+  color: #fff
 }
 
 .dialog:after {
   width: 100%;
   height: 100%;
   -webkit-filter: blur(3px);
-  filter: blur(3px);
+  filter: blur(3px)
 }
 
 .dialog::-webkit-backdrop {
-  background-color: rgb(26 34 43 / 42%);
+  background-color: rgb(26 34 43 / 42%)
 }
 
 .dialog::backdrop {
-  background-color: rgb(26 34 43 / 42%);
+  background-color: rgb(26 34 43 / 42%)
 }
 
 .dialog p {
-  color: white;
+  color: #fff
 }
 
 .dialog span {
-  color: white;
+  color: #fff
 }
 
 .dialog label {
-  color: white;
+  color: #fff
 }
 
-input[type="text"] {
-  color: rgb(226, 226, 226);
-  background-color: rgb(25, 25, 25);
-  border-radius: 5px;
+input[type=text] {
+  color: #e2e2e2;
+  background-color: #191919;
+  border-radius: 5px
 }
 
-input[type="password"] {
-  color: rgb(226, 226, 226);
-  background-color: rgb(25, 25, 25);
-  border-radius: 5px;
+input[type=password] {
+  color: #e2e2e2;
+  background-color: #191919;
+  border-radius: 5px
 }
 
-input[type="password"]:valid {
-  border: 2px solid rgba(190, 255, 11, 0.205);
+input[type=password]:valid {
+  border: 2px solid rgba(190, 255, 11, .205)
 }
 
-input[type="text"]:valid {
-  border: 2px solid rgba(190, 255, 11, 0.205);
+input[type=text]:valid {
+  border: 2px solid rgba(190, 255, 11, .205)
 }
 
-input[type="password"]:invalid {
-  border: 2px solid rgba(255, 0, 0, 0.205);
-  -webkit-animation: invalid 0.3s 2;
-  animation: invalid 0.3s 2;
+input[type=password]:invalid {
+  border: 2px solid rgba(255, 0, 0, .205);
+  -webkit-animation: invalid .3s 2;
+  animation: invalid .3s 2
 }
 
-input[type="text"]:invalid {
-  border: 2px solid rgba(255, 0, 0, 0.205);
-  -webkit-animation: invalid 0.3s 2;
-  animation: invalid 0.3s 2;
+input[type=text]:invalid {
+  border: 2px solid rgba(255, 0, 0, .205);
+  -webkit-animation: invalid .3s 2;
+  animation: invalid .3s 2
 }
 
 @-webkit-keyframes invalid {
   25% {
-    translate: 3px 0;
+    translate: 3px 0
   }
 
   50% {
-    translate: -3px 0;
+    translate: -3px 0
   }
 
   75% {
-    translate: 3px 0;
+    translate: 3px 0
   }
 }
 
 @keyframes invalid {
   25% {
-    translate: 3px 0;
+    translate: 3px 0
   }
 
   50% {
-    translate: -3px 0;
+    translate: -3px 0
   }
 
   75% {
-    translate: 3px 0;
+    translate: 3px 0
   }
 }
 
@@ -1299,26 +1163,26 @@ input[type="text"]:invalid {
   height: 38px;
   text-align: center;
   border-radius: 5px;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   line-height: 28px;
   margin: 2px 0;
-  padding: 0 20px;
+  padding: 0 20px
 }
 
 .newbutton.black {
   background: #202020;
-  border: 2px solid #272727;
+  border: 2px solid #272727
 }
 
 .newbutton:hover {
-  border-color: #161616;
+  border-color: #161616
 }
 
 .sidebarpnl {
-  grid-area: sidebarpnl;
+  grid-area: sidebarpnl
 }
 
 .bodypnl {
-  grid-area: bodypnl;
+  grid-area: bodypnl
 }
