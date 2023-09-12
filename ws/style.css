@@ -48,7 +48,8 @@ ul {
 }
 
 html {
-  height: 100%;
+  height: 100% !important;
+  min-height: 100% !important;
   scroll-behavior: smooth;
 }
 
@@ -61,7 +62,8 @@ body {
   background-color: #161616;
   overflow-x: hidden;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
+  min-height: 100% !important;
 }
 
 div.clear {
@@ -491,30 +493,26 @@ section strong {
   line-height: 5px
 }
 
-.games-csgo {
+.zproducts {
   -webkit-transition: all 0.7s ease-in-out;
   -o-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
 }
 
-.games-csgo .container {
+.zproducts .container {
   max-width: 1200px;
-  margin: 100px auto 60px auto;
+  margin: 60px auto auto auto;
   padding: 15px;
   border-radius: 15px;
-  background: rgba(3, 3, 3, .623)
+  background: rgba(3, 3, 3, 0.700)
 }
 
-.games-csgo .grid {
-  margin-bottom: 35px
-}
-
-.games-csgo img {
+.zproducts img {
   display: block;
   margin: auto
 }
 
-.games-csgo .item {
+.zproducts .item {
   max-width: 340px;
   margin: auto;
   padding: 10px;
@@ -525,7 +523,7 @@ section strong {
   border-radius: 10px
 }
 
-.games-csgo h1 {
+.zproducts h1 {
   text-align: center;
   font-family: Montserrat, sans-serif;
   font-size: 44px;
@@ -533,11 +531,11 @@ section strong {
   text-transform: uppercase
 }
 
-.games-csgo h3 {
+.zproducts h3 {
   text-align: center
 }
 
-.games-csgo p {
+.zproducts p {
   text-align: center;
   font-family: Montserrat, sans-serif;
   font-size: 15px;
@@ -546,7 +544,7 @@ section strong {
   line-height: 9px
 }
 
-.games-csgo .header .subtle {
+.zproducts .header .subtle {
   text-align: center;
   font-size: 14px;
   color: #fff;
@@ -557,83 +555,6 @@ section strong {
   background-color: #141414c0;
   padding-top: 15px;
   border-radius: 5px
-}
-
-#games {
-  min-height: calc(100% - 205px);
-  background: url(../img/bg-rust.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  position: relative
-}
-
-#games .header .subtle {
-  text-align: center;
-  font-size: 14px;
-  border-bottom: 1px solid #fff;
-  color: #fff;
-  padding-bottom: 15px;
-  font-weight: 700;
-  width: 60%;
-  margin: auto
-}
-
-#games .container {
-  max-width: 1200px;
-  margin: 100px auto 60px auto;
-  padding: 15px;
-  border-radius: 15px;
-  background: -o-linear-gradient(top, rgba(13, 13, 21, .123), rgba(13, 13, 21, .753), rgba(13, 13, 21, .171));
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 13, 21, .123)), color-stop(rgba(13, 13, 21, .753)), to(rgba(13, 13, 21, .171)));
-  background: linear-gradient(180deg, rgba(13, 13, 21, .123), rgba(13, 13, 21, .753), rgba(13, 13, 21, .171))
-}
-
-#games .grid {
-  margin-bottom: 35px
-}
-
-#games img {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  display: block;
-  margin: auto
-}
-
-#games .item {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  max-width: 340px;
-  margin: auto;
-  padding: 10px;
-  min-height: 210px;
-  max-height: 300px;
-  background: #0a0a0ab7;
-  background-color: linear-gradient(to top, rgba(119, 3, 252, .7), rgba(119, 3, 252, .1));
-  border-radius: 10px
-}
-
-#games h1 {
-  text-align: center;
-  font-family: Montserrat, sans-serif;
-  font-size: 44px;
-  color: #fff;
-  text-transform: uppercase
-}
-
-#games h3 {
-  text-align: center
-}
-
-#games p {
-  text-align: center;
-  font-family: Montserrat, sans-serif;
-  font-size: 15px;
-  color: #fff;
-  text-transform: uppercase;
-  line-height: 9px
 }
 
 .btn-full {
@@ -661,23 +582,6 @@ section strong {
   -webkit-box-shadow: 0 0 30px 0 rgba(255, 255, 255, .795);
   box-shadow: 0 0 30px 0 rgba(255, 255, 255, .795);
   background-color: #171f29;
-}
-
-#games-list h1 {
-  text-align: center;
-  font-size: 18px;
-  border-bottom: 1px solid #fff;
-  color: #fff;
-  padding-bottom: 15px;
-  width: 450px;
-  margin: auto;
-  margin-bottom: 40px
-}
-
-#games-list {
-  width: 100%;
-  margin: auto;
-  background: #141414
 }
 
 #footer {
