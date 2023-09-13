@@ -573,6 +573,9 @@ section strong {
   background-color: #171f29
 }
 
+#footer {
+  height: fit-content;
+}
 
 /*#footer {
   height: 180px;
@@ -585,7 +588,7 @@ section strong {
 
 #footer .container {
   overflow: hidden;
-  margin-bottom: 6rem;
+  margin-bottom: 20px;
 }
 
 #footer h5 {
