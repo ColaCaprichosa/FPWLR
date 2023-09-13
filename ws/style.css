@@ -43,6 +43,11 @@ ul {
   list-style: none
 }
 
+html{
+  height: -webkit-fill-available;
+  height: 100%;
+}
+
 body {
   line-height: 1;
   background: #fff;
@@ -192,7 +197,12 @@ nav#menu>ul>li.external {
 
 .sf-menu li {
   position: relative;
-  white-space: pre-wrap
+  white-space: pre-wrap;
+}
+
+.sf-menu li:hover {
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 .sf-menu {
@@ -568,14 +578,15 @@ section strong {
   background-color: #171f29
 }
 
-#footer {
+
+/*#footer {
   height: 180px;
   background: #2a2a2a;
   background-color: #2a2a2a;
   padding: 20px 0 0px 0;
   -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .25);
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, .25);
-}
+}*/
 
 #footer .container {
   overflow: hidden;
