@@ -43,9 +43,8 @@ ul {
   list-style: none
 }
 
-html{
+html {
   height: -webkit-fill-available;
-  height: 100%;
 }
 
 body {
