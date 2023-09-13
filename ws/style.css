@@ -946,7 +946,8 @@ section strong {
   }
 }
 
-.options-container,.options-container-1 {
+.options-container,
+.options-container-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,7 +962,9 @@ section strong {
   width: 300px;
   height: 250px;
   min-height: 250px;
-            max-height: fit-content;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   border-radius: 5px;
   overflow: hidden;
   margin: 10px 5px;
@@ -978,6 +981,9 @@ section strong {
   text-align: center;
   position: relative;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   background-color: #1e214a4f;
   -webkit-box-shadow: 0 0 5px 0 #082f5e7d;
@@ -1250,7 +1256,7 @@ input[type=text]:invalid {
   grid-area: bodypnl
 }
 
-.aboutussection {
+.customsection {
   --s: 90px;
   --c1: #00205c5b;
   --c2: #080808;
@@ -1275,5 +1281,7 @@ input[type=text]:invalid {
   max-height: -moz-max-content;
   max-height: max-content;
   min-height: 100%;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
   max-height: fit-content;
 }
