@@ -58,7 +58,7 @@ body {
 }
 
 div.clear {
-  clear: both
+  clear: both;
 }
 
 img {
@@ -574,6 +574,8 @@ section strong {
 }
 
 #footer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -1292,4 +1294,28 @@ input[type=text]:invalid {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
+}
+
+.faqsimple {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  margin: 10px 0px 0px 0px;
+}
+
+.active, .faqsimple:hover {
+  background-color: #555;
+}
+
+.faqsimplecnt {
+  display: none;
+  color: #fff;
+  font-size: 12px;
+  overflow: hidden;
+  margin: 0px 0px 20px 0px;
+  background-color: #f1f1f123;
 }
