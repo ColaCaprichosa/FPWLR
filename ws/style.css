@@ -1307,7 +1307,7 @@ input[type=text]:invalid {
   margin: 10px 0px 0px 0px;
 }
 
-.faqsimple .active, .faqsimple:hover {
+.faqsimple:hover {
   background-color: #555;
 }
 
