@@ -400,9 +400,6 @@ section strong {
 
 .features {
   padding: 65px 0;
-  background-image: -o-radial-gradient(red 12%, transparent 0);
-  background-image: radial-gradient(red 12%, transparent 0);
-  background-size: 15px 15px
 }
 
 .features * {
