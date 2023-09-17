@@ -1039,6 +1039,7 @@ section strong {
 }
 
 .card {
+  --c1: #006eff5b;
   width: 300px;
   height: 250px;
   background-color: #fff;
@@ -1060,9 +1061,10 @@ section strong {
   text-align: center;
   position: relative;
   cursor: pointer;
+  background: linear-gradient(var(--c1), rgba(18, 18, 18, 0.85)), linear-gradient(rgba(255, 1, 1, 0.063), var(--c1));
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
-  transition: all .3s ease
+  transition: all .3s ease;
 }
 
 .card img {
@@ -1116,7 +1118,7 @@ section strong {
   transform: translateY(-2px);
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
-  background-color: #e7e7e7
+  background-color: #e7e7e796
 }
 
 .card:after {
