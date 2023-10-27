@@ -304,14 +304,14 @@ section {
   padding: 60px 0
 }
 
-section h1 {
+section>div>div>h1 {
   font-family: Montserrat, sans-serif;
   font-size: 60px;
   color: #fff;
   text-transform: uppercase
 }
 
-section h2 {
+section>div>div>h1>h2 {
   font-family: Montserrat, sans-serif;
   font-size: 24px;
   color: #30bae7;
@@ -319,13 +319,13 @@ section h2 {
   text-transform: uppercase
 }
 
-section a {
+section>div>div>h1>a {
   color: #30bae7;
   font-family: Montserrat, sans-serif;
   text-decoration: none
 }
 
-section p {
+section>div>div>h1>p {
   font-family: Montserrat, sans-serif;
   font-size: 24px;
   line-height: 30px;
@@ -333,12 +333,42 @@ section p {
   margin-top: 20px
 }
 
-section li {
+section>div>div>h1>li {
   color: #083a5e
 }
 
-section strong {
+section>div>div>h1>strong, section>div>div>h1>p>strong {
   color: #6200ff
+}
+
+a#nextProduct{
+    transition: all 0.5s;
+}
+
+a#nextProduct::before{
+  position: absolute;
+    top: -13px;
+    left: -17px;
+    z-index: 2;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgb(76 29 245 / 57%);
+    border-radius: 100%;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%, 100%{
+      opacity: 0;
+  }
+  15%, 45%{
+      opacity: 1;
+  }
+  60%{
+      box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+  }
 }
 
 #landing {
@@ -354,11 +384,11 @@ section strong {
 }
 
 #landing .content {
-  width: 1000px;
+  width: 100%;
   max-width: 100%;
   margin: auto;
   position: relative;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%)
@@ -413,7 +443,8 @@ section strong {
 .features h2 {
   color: #fff;
   font-size: 20px;
-  margin-bottom: 15px
+  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 .features .header .subtle {
@@ -431,7 +462,8 @@ section strong {
   max-width: 660px;
   margin: 50px auto 0;
   font-size: 18px;
-  color: #fff
+  color: #fff;
+  margin-top: 20px;
 }
 
 .features .feature-list {
@@ -475,7 +507,8 @@ section strong {
 
 .features .feature-list .feature p {
   font-size: 15px;
-  line-height: 5px
+  line-height: 5px;
+  margin-top: 20px;
 }
 
 .zproducts {
@@ -526,7 +559,8 @@ section strong {
   font-size: 15px;
   color: #fff;
   text-transform: uppercase;
-  line-height: 9px
+  line-height: 9px;
+  margin-top: 20px;
 }
 
 .zproducts .header .subtle {
@@ -1010,6 +1044,8 @@ section strong {
   color: #fff;
   font-size: 14px;
   overflow: hidden;
+  line-height: 30px;
+  margin-top: 20px;
 }
 
 .cardabout:hover {
