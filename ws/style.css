@@ -337,37 +337,29 @@ section>div>div>h1>li {
   color: #083a5e
 }
 
-section>div>div>h1>strong, section>div>div>h1>p>strong {
+section>div>div>h1>strong,
+section>div>div>h1>p>strong {
   color: #6200ff
 }
 
-a#nextProduct{
-    transition: all 0.5s;
+a#nextProduct {
+  transition: all 0.1s;
 }
 
-a#nextProduct::before{
-  position: absolute;
-    top: -13px;
-    left: -17px;
-    z-index: 2;
-    content: '';
-    width: 44px;
-    height: 44px;
-    box-shadow: 0 0 0 0 rgb(76 29 245 / 57%);
-    border-radius: 100%;
-    animation: pulse 3s infinite;
+a#nextProduct>p>i::before {
+  text-shadow: 1px 1px 2px #6200ff, 0 0 1em white, 0 0 0.2em #6200ff;
+  transition: all 0.1s;
+  animation: pulse2 1s infinite;
 }
 
-@keyframes pulse {
-  0%, 100%{
-      opacity: 0;
+@keyframes pulse2 {
+  0%,
+  100% {
+    text-shadow: 0 0 #0000;
   }
-  15%, 45%{
-      opacity: 1;
-  }
-  60%{
-      box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
-      opacity: 0;
+
+  50% {
+    text-shadow: 2px 2px 3px #6200ff, 0 0 2em white, 0 0 0.2em #6200ff;
   }
 }
 
